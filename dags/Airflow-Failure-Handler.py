@@ -4,6 +4,24 @@ from datetime import timedelta
 
 # This DAG demonstrates how to handle task failures in Airflow using retries and exponential backoff.
 
+# use ubuntu (wsl) terminal and create virtual environment 
+#  python3 -m venv .venv
+#  source .venv/bin/Activate
+
+# create airflow home: export AIRFLOW_HOME=~/<YOUR-DIRECCTORY-NAME>/airflow
+# make it permanent: echo 'export AIRFLOW_HOME=~/<YOUR-DIRECCTORY-NAME>/airflow' >> ~/.bashrc
+
+# run this cmd: source ~/.bashrc
+
+# #Install Apache Airflow:: pip install apache-airflow
+
+# #Create the DAGs folder: mkdir \dags
+
+# Initialize Airflow: airflow standalone
+
+# from 'simple_auth_manager.....' in your directory use the username and password to login into: https://localhost:8080 
+
+
 
 default_args = {
     'retries': 3, # Number of retries before failing the task
